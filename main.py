@@ -5,7 +5,6 @@ import typing
 import emoji
 from replit import db
 from keep_alive import keep_alive
-from music import music
 import smtplib
 import emoji
 import requests
@@ -80,6 +79,5 @@ for filename in os.listdir('./cogs'):
 
 
 keep_alive()
-music
 
 client.run(os.environ['TOKEN'])#your discord token in environ file
