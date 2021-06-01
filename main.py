@@ -5,6 +5,7 @@ import typing
 import emoji
 from replit import db
 from keep_alive import keep_alive
+from music import music
 import smtplib
 import emoji
 import requests
@@ -44,25 +45,6 @@ async def hi(ctx):
 async def ping(ctx):
   await ctx.send(f'ping  {round(client.latency*1000)}ms')
 
-@client.command()
-async def mail(ctx):
-
-  mail=os.environ['mail']
-  passw=os.environ['password']
-  nam=os.environ["naman"]
-  amit=os.environ["amit"]
-  rak=os.environ["rak"]
-  man=os.environ['man']
-  print(mail,passw)
-  words=(amit ,nam ,rak ,man)
-  for word in words:
-    server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-    server.login(mail,passw)
-    server.sendmail("sevenrbot@gmail.com",word,"hello  this is your bot please join discord and play GTA")
-    server.quit()
-  await ctx.send("Mail sent successfully :thumbsup: ")
-###################################quotes###########################
-
 
 
 @client.command()
@@ -98,5 +80,6 @@ for filename in os.listdir('./cogs'):
 
 
 keep_alive()
+music
 
-client.run(os.environ['TOKEN'])
+client.run(os.environ['TOKEN'])#your discord token in environ file
