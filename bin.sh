@@ -1,10 +1,5 @@
-#!/bin/bash
-echo "
- _  _  ____  __     ___  __   _  _  ____ 
-/ )( \(  __)(  )   / __)/  \ ( \/ )(  __)
-\ /\ / ) _) / (_/\( (__(  O )/ \/ \ ) _) 
-(_/\_)(____)\____/ \___)\__/ \_)(_/(____)
-"
+#!/usr/bin/python3
+figlet "WELCOME"
 echo "starting bash"
 echo -e "\e[1;31m Installing new version of pip \e[0m"
 pip install --upgrade pip
