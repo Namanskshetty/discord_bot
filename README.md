@@ -4,11 +4,15 @@
    ```sh
     git clone https://github.com/Namanskshetty/discord_bot.git
     ```
-2. Give the executable permission to bin.sh file
+2. Go to folder
+   ```sh
+   cd discord_bot
+   ```
+3. Give the executable permission to bin.sh file
    ```sh
    chmod +x bin.sh
    ```
-3. Run the bash file
+4. Run the bash file
     ```sh
     ./bin.sh
     ```
